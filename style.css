@@ -1,0 +1,909 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.body-class{
+  background-color: #0a0401;
+}
+
+.ekran{
+  
+  background-color: #0a0401;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  --color-primary: rgba(134, 136, 138, 0.842);
+--color-primary-dark: rgb(104, 101, 103);
+--color-secondary: rgb(87, 80, 80);
+--color-error: rgb(107, 99, 105);
+--color-success: rgba(45, 35, 45, 0.7);
+--border-radius: 5px;
+
+background: linear-gradient(to right, var(--color-primary), var(--color-primary-dark)), url(yazilim.jpg);
+}
+
+
+
+.contanier .navbar{
+width: 100%;
+height: 80px;
+background-image: linear-gradient(
+        30deg,
+        #6d0d65dc 5%,
+        #0fc2e298 52%,
+        #490532b9 80%
+        );
+}
+
+
+
+/*.buttons33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttons33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}*/
+
+
+.buttons33,
+.buttons33:after {
+  width: 150px;
+  height: 76px;
+  line-height: 28px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttons33:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.buttons33:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button33,
+  .button33:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+h1{
+text-align: center;
+color: white;
+margin-top: 20px;
+font-size: 40px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.soru{
+text-align: center;
+color: rgb(231, 230, 240);
+font-size: 20px;
+margin-top: 10px;
+justify-content: center;
+}
+
+
+.buttons{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.buttons button{
+width: 130px;
+height: 50px;
+margin: 7px;
+}
+    
+
+.olacaklar{
+gap: 5px;
+height: 26rem;
+display:flex;
+width: 80%;
+height: 80%;
+justify-content: center;
+margin: auto;
+margin-top: 50px;  
+}
+
+
+.resim{
+height: 25rem;
+flex: 1.5;
+background-position: center;
+background-repeat: no-repeat;
+transition: all.9s cubic-bezier(.25, .4, 0.45, 1.4);
+border-radius: 15%;
+height: 500px;
+}
+
+.olacaklar > div:hover{
+flex: 4.8;
+transform: scale(1.2);
+z-index: 1;
+}
+
+.menu{
+background-color: #c9c8b613;
+        border-radius: 60px;
+        margin: 20px auto;
+        width: 70%;
+        background-size: 300% 300%;
+     height: 100px;
+        }
+
+        .menu ol{
+            display: flex;
+         padding: 0 5px;
+            align-items: center;
+            list-style: none;
+    
+    
+        }
+
+.menu ol li{
+position: relative;
+width: 20%;
+height: 60px;
+margin: 20px ;
+display: flex;
+justify-content: center;
+text-align: center;
+                   
+border-radius: 50px;
+background-image: linear-gradient(
+25deg,
+#0a0a0a4f 0%,
+#38333862 52%,
+#0c060157 90%
+);
+         
+}
+     
+    
+
+.menu ol li a{
+
+    display: block;
+    line-height: 60px;
+    border-radius: 60px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+        }
+
+
+.menu > ol > li:hover {
+    background: white;
+    border-radius: 60px;
+
+
+}
+.menu > ol > li:hover a{
+      color: #0a0401;
+font-family: monospace;
+    font-size: 20px;
+
+}
+
+
+
+.dersler ul li{
+    display: flex;
+    list-style: none;
+    margin-left: 110px;
+     float: left;
+    padding: 20px;
+    margin: 10px;
+ }
+
+
+.dersler ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border: solid 1px rgba(192, 190, 204, 0.103);
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(7, 77, 77, 0.692);
+    color: white;
+    font-size: 30px;
+    border-radius: 70px;
+    box-shadow: 5px 10px 8px 5px rgb(3, 28, 56), 0 6px 20px 0 rgb(15, 46, 221);
+
+}
+
+.dersler ul li a:hover{
+background-color: rgb(231, 229, 229);
+ font-size:50px;   
+color: rgb(10, 0, 0);
+box-shadow: 5px 8px 8px 5px rgb(163, 11, 11), 0 6px 20px 0 rgb(221, 15, 15);
+transform: scale(1.2);
+transition: all 0.5s;
+
+}
+
+.tumprojeler1{
+
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  float: left;
+  display: flex;
+  padding: 5px;
+margin-left: 5%;
+
+}
+
+
+
+.proje{
+margin: 20px;
+align-items: center;
+border-radius: 10px;
+margin-top: 2%;
+overflow: hidden;
+position: relative;
+
+} 
+
+.tumslaytlar{
+
+width: 90%;
+margin-left: 5%;
+padding: 50px;
+
+}
+
+.resimler{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.resimler a{
+  color: #00e6f600;
+  font-size: 50px;
+  text-decoration: none;
+  line-height: 3;
+  text-align: center;
+
+  
+}
+.slayt1{
+  background: url(dosyalar/algoritma.png);
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+
+  }
+
+
+
+
+.slayt2{
+background: url(dosyalar/api.png);
+width: 300px;
+height: 200px;
+background-repeat: no-repeat;
+text-align: center;
+}
+
+.slayt3{
+background: url(dosyalar/bootstrap.PNG);
+width: 300px;
+height: 200px;
+background-repeat: no-repeat;
+
+}
+
+.slayt4{
+background: url(dosyalar/css.png);
+width: 300px;
+height: 200px;
+background-repeat: no-repeat;
+text-align: center;
+}
+
+.slayt5{
+background: url(dosyalar/css3.PNG);
+width: 300px;
+height: 200px;
+background-repeat: no-repeat;
+text-align: center;
+}
+
+.slayt6{
+background: url(dosyalar/github.png);
+width: 300px;
+height: 200px;
+background-repeat: no-repeat;
+text-align: center;
+}       
+
+
+.slayt7{
+background: url(dosyalar/html.png);
+width: 300px;
+height: 200px;
+background-repeat: no-repeat;
+text-align: center;
+}
+        
+.slayt8{
+background: url(dosyalar/html5.PNG);
+width: 300px;
+height: 200px;
+background-repeat: no-repeat;
+text-align: center;
+}
+        
+.slayt9{
+background: url(dosyalar/js.png);
+width: 300px;
+height: 200px;
+background-repeat: no-repeat;
+}
+        
+.slayt10{
+background: url(dosyalar/sass.PNG);
+width: 300px;
+height: 200px;
+background-repeat: no-repeat;
+text-align: center;
+ }   
+
+h5{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.tumlinkler{
+
+  width: 90%;
+  margin-left: 10%;
+
+
+}
+
+
+.linkler{
+  border: solid 2px white;
+  width: 300px;
+  height: 300px;
+ margin-top: 50px;
+ text-align: center;
+  float: left;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 80px;
+
+}
+
+.linkler p{
+  align-items: center;
+  text-align: center;
+  font-size: 120%;
+
+}
+
+.linkler a{
+  text-decoration: none;
+  border: solid 1px rgba(250, 239, 249, 0.288);
+  padding: 10px;
+  background-color: #e23eb1;
+  border-radius: 50px;
+  color: rgb(245, 243, 243);
+
+
+
+}
+
+.tumodevler{
+
+  clear: both;
+  text-align: center;
+}
+
+
+
+.teachabledersler{
+
+text-align: center;
+margin-top: 100px;
+
+}
+
+.teachabledersler p{
+  text-decoration: none;
+  font-size: 30px;
+
+  color: #0d053af6;
+  margin-top: -100px;
+
+
+}
+
+.teachabledersler p a{
+  text-decoration: none;
+  font-size: 100px;
+  color: #0f060200;
+
+}
+
+
+.derslerimiz1{
+  background: url(resim/algoritma.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz2{
+  background: url(resim/html.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+  margin-left: 30%;
+}
+
+.derslerimiz3{
+  background: url(resim/cssgiris.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+  margin-left: 30%;
+}
+.derslerimiz4{
+  background: url(resim/cssbitis.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+
+
+}
+
+.derslerimiz5{
+  background: url(resim/hmtlcssproje1.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz6{
+  background: url(resim/hmtlcssproje2.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz7{
+  background: url(resim/hmtlcssproje3.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz8{
+  background: url(resim/hmtlcssproje4.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz9{
+  background: url(resim/html5giris.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz10{
+  background: url(resim/css3giris.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz11{
+  background: url(resim/css3sonuc.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz12{
+  background: url(resim/akademi.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz13{
+  background: url(resim/nft.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz14{
+  background: url(resim/hero.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz15{
+  background: url(resim/kartlar.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz16{
+  background: url(resim/projebitis.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz17{
+  background: url(resim/github.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+  margin-left: 30%;
+}
+
+.derslerimiz18{
+  background: url(resim/gitproje.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz19{
+  background: url(resim/gitguncel.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz20{
+  background: url(resim/gitbranch.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz21{
+  background: url(resim/projeyapgit.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz22{
+  background: url(resim/section2.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz23{
+  background: url(resim/section3.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz24{
+  background: url(resim/section4.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz25{
+  background: url(resim/bootstrap.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz26{
+  background: url(resim/bsland.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz27{
+  background: url(resim/udemigproje.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz28{
+  background: url(resim/anasayfa.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz29{
+  background: url(resim/kaydol.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz30{
+  background: url(resim/gitreadme.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+.derslerimiz31{
+  background: url(resim/scssilkproje.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz32{
+  background: url(resim/nissan.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz33{
+  background: url(resim/projebitisgithub.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz34{
+  background: url(resim/degisken.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz35{
+  background: url(resim/fonksiyonlar.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz36{
+  background: url(resim/array.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz37{
+  background: url(resim/arrayexa.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz38{
+  background: url(resim/loop.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz39{
+  background: url(resim/usestri.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+.derslerimiz40{
+  background: url(resim/events.JPG);
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 500px;
+margin-left: 30%;
+}
+
+
+#button89 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: #0a0401;
+}
+
+#button89:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+
+}
+
+#button89:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+
+
+#kacan{
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: #0a0401;
+}
+
+#kacan:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+
+}
